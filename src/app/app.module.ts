@@ -5,7 +5,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
-
+import { SignupPage } from '../pages/signup/signup';
 
 @NgModule({
   declarations: [
@@ -13,10 +13,11 @@ import { LoginPage } from '../pages/login/login';
     AboutPage,
     ContactPage,
     HomePage,
-    LoginPage
+    LoginPage,
+    SignupPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -25,6 +26,7 @@ import { LoginPage } from '../pages/login/login';
     ContactPage,
     HomePage,
     LoginPage,
+    SignupPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
