@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar  color="dash-yellow">
+  <ion-navbar  color="primary">
     <!--<ion-title>Signup</ion-title>-->
 
   </ion-navbar>
@@ -15,5 +15,29 @@
 
 
 <ion-content padding>
- hello world!
+ <form [formGroup]="signupForm">
+        
+        <ion-item padding-horizontal>
+            <ion-label floating>Username</ion-label>
+            <ion-input formControlName="username" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item padding-horizontal>
+            <ion-label floating>Email</ion-label>
+            <ion-input formControlName="email" type="email"></ion-input>
+        </ion-item>
+ 
+        <ion-item padding-horizontal>
+            <ion-label floating>Password</ion-label>
+            <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+
+        <ion-item padding-horizontal>
+            <ion-label floating>Confirm Password</ion-label>
+            <ion-input formControlName="passwordConf" type="password"></ion-input>
+        </ion-item>
+
+        <button ion-button full color="primary">Create account</button>
+ 
+    </form>
 </ion-content>
